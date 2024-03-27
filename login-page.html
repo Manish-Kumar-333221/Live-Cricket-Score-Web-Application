@@ -1,89 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Create Account</title>
   <style>
-    
-    body{
-        background-color:whitesmoke;
-        font-family: Arial, Helvetica, sans-serif;
-        }
-
-    .logo-box{
-        width:100vw;
-        height:25vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #007fff;
-        margin-left: -8px;
-        margin-top: -8px;
-    }
-    h2{
-        text-align: center;
-        color: #007fff;
-    }
-    
-    .input-box{
-        background-color:;
-        width:100vw;
-        height: 25vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-left: -8px;
-
-    }
-    input[type="email"]{
-        width:50vw;
-        height: 40px;
-        border-radius: 5px;
-        border:none;
-        box-shadow: 0 0 10px #007fff;
+    body {
+      background-color: whitesmoke;
+      font-family: Arial, Helvetica, sans-serif;
     }
 
-    .otp-button{
-        width:10vw;
-        height: 28px;
-        background-color: #007fff;
-        border:none;
-        border-radius: 5px;
-        margin-left: -85px;
-        color:white;
-        cursor: pointer;
+    .logo-box {
+      width: 100vw;
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #007fff;
+      margin-left: -8px;
+      margin-top: -8px;
     }
 
-    .otp-button:hover{
-        width:10vw;
-        height: 28px;
-        background-color: #0073e7;
-        border:none;
-        border-radius: 5px;
-        margin-left: -85px;
-        color:white;
+    h2 {
+      text-align: center;
+      color: #007fff;
     }
 
+    .input-box {
+      background-color: lightgray;
+      width: 100vw;
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: -8px;
+
+    }
+
+    input[type="email"] {
+      width: 50vw;
+      height: 40px;
+      border-radius: 5px;
+      border: none;
+      box-shadow: 0 0 10px #007fff;
+    }
+
+    .otp-button {
+      width: 10vw;
+      height: 28px;
+      background-color: #007fff;
+      border: none;
+      border-radius: 5px;
+      margin-left: -85px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .otp-button:hover {
+      width: 10vw;
+      height: 28px;
+      background-color: #0073e7;
+      border: none;
+      border-radius: 5px;
+      margin-left: -85px;
+      color: white;
+    }
   </style>
 </head>
+
 <body>
-    <div class="logo-box">
-        <img src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" width="125px" height="auto">
-    </div>
+  <div class="logo-box">
+    <img src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" width="125px" height="auto">
+  </div>
   <div id="create-account-container">
     <h2>Create New Account</h2>
     <div class="input-box">
-    <input type="email" id="email" placeholder="Enter your Gmail">
-    <button onclick="sendOTP()" class="otp-button">Send Otp</button>
+      <input type="email" id="email" placeholder="Enter your Gmail">
+      <button onclick="sendOTP()" class="otp-button">Send Otp</button>
 
-    <div id="otp-container" style="display: none;">
-      <input type="text" id="otp" placeholder="Enter OTP">
-      <button onclick="verifyOTP()">Verify OTP</button>
+      <div id="otp-container" style="display: none;">
+        <input type="text" id="otp" placeholder="Enter OTP">
+        <button onclick="verifyOTP()">Verify OTP</button>
+      </div>
+      <button id="create-account-btn" style="display: none;" onclick="createAccount()">Create Account</button>
+      <div id="message"></div>
     </div>
-    <button id="create-account-btn" style="display: none;" onclick="createAccount()">Create Account</button>
-    <div id="message"></div>
-  </div>
   </div>
   <script>
     function sendOTP() {
@@ -107,10 +109,11 @@
       // For demonstration, let's assume the account is created successfully
       document.getElementById("message").innerText = "Account created successfully!";
       // Redirect to the homepage after successful account creation
-      setTimeout(function() {
+      setTimeout(function () {
         window.location.href = "index.html";
       }, 2000); // Redirect after 2 seconds (you can adjust the timing)
     }
   </script>
 </body>
+
 </html>

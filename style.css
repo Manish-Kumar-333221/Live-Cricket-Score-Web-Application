@@ -26,7 +26,7 @@ header{
 
 input[type="search"]{
   width:33vw;
-  height: 30px;
+  height: 33px;
   border-radius: 15px;
   text-align: left;
   border:1px solid black;
@@ -36,23 +36,49 @@ input[type="search"]{
 
 .search-button{
   width:30px;
-  height: 30px;
+  height:25px;
   background-color:transparent;
   border:none;
   border-radius: 10px;
   margin-left: -35px;
+  cursor: pointer;
 }
 
-.menu-box{
-  background-color: #007fff;
-  width:50px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #007fff;
-  border:none;
-  margin: auto;
-  margin-left:85vw;
-  margin-top: -42px;
+.menu-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  width:30px;
+  height: 30px;
+  margin-top: -15px;
+}
+
+.sliding-menu {
+  position: fixed;
+  top: 0;
+  right: -250px;
+  width: 200px;
+  height: 100%;
+  background-color: #333;
+  transition: right 0.3s ease;
+}
+
+.sliding-menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sliding-menu ul li {
+  padding: 15px;
+  border-bottom: 1px solid #666;
+}
+
+.sliding-menu ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.sliding-menu ul li:hover {
+  background-color: #555;
 }

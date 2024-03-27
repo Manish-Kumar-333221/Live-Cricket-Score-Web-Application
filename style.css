@@ -2,3 +2,21 @@
   color:blue;
   text-align:center;
 }
+.rect{
+  border: 2px solid black;
+  height: 150px;
+  width: 150px;
+  background-color: green;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cir{
+  border: 2px solid black;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: red;
+
+}

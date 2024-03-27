@@ -1,22 +1,58 @@
-.h1{
-  color:blue;
-  text-align:center;
+body{
+  font-family: Arial, Helvetica, sans-serif;
 }
-.rect{
-  border: 2px solid black;
-  height: 150px;
-  width: 150px;
-  background-color: green;
+header{
+  width: 100vw;
+  height: 60px;
+  background-color: #007fff ;
+  justify-content: center;
+  position: relative;
+  margin-left: -9px;
+  margin-top: -10px;
+}
+
+#ipl-logo-nav{
+  margin-left:15px;
+  padding-top:10px;
+}
+
+.input-search-box{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+}
+
+input[type="search"]{
+  width:33vw;
+  height: 30px;
+  border-radius: 15px;
+  text-align: left;
+  border:1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 2vw;
+}
+
+.search-button{
+  width:30px;
+  height: 30px;
+  background-color:transparent;
+  border:none;
+  border-radius: 10px;
+  margin-left: -35px;
+}
+
+.menu-box{
+  background-color: #007fff;
+  width:50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.cir{
-  border: 2px solid black;
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-  background-color: red;
-
+  background-color: #007fff;
+  border:none;
+  margin: auto;
+  margin-left:85vw;
+  margin-top: -42px;
 }

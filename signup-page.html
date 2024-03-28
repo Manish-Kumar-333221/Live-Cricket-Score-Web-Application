@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        
+        .logo-box{
+        width:100vw;
+        height:25vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #007fff;
+        margin-left: -8px;
+        margin-top: -8px;
+    }
+        .container {
+            width: 100%;
+            max-width: 500px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .input-container {
+            position: relative;
+        }
+
+        input {
+            width: calc(100% - 5%); /* Adjusted width */
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            border:1px solid grey;
+        }
+        .button-box{
+            width:100% - 5%;
+            max-height: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+        }
+        button {
+            position: relative;
+            top: -5px;
+            margin: auto;
+            padding: 10px 25px;
+            background-color: royalblue;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 1.5s ease; /* Transition for animation */
+        }
+
+        button:hover {
+            background-color: #004080;
+            transition: 0.1s;
+        }
+
+        .sent-otp {
+            transform: translateX(0); /* Initial position */
+        }
+
+        .sent-otp.animate {
+            transform: translateX(-100%); /* Move left 100% */
+        }
+
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            z-index: 9999; /* Ensure the overlay is above other content */
+            display: none; /* Initially hidden */
+            background-image: url('./cricket-field-background.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-blend-mode: soft-light;
+
+        }
+
+        .loading-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-box">
+        <img src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" width="125px" height="auto">
+    </div>
+
+    <div class="container">
+        <h2>Login Account</h2>
+        <div class="input-container">
+            <input type="email" id="emailInput" placeholder="Enter your email">
+            <div class="button-box">
+            <button id="otpButton" onclick="animateSentOtp()">Send OTP</button>
+        </div>
+    </div>
+    </div>
+    <div class="loading-overlay" id="loadingOverlay">
+        <div class="loading-text">Loading...</div>
+    </div>
+    <script>
+        function animateSentOtp() {
+            var otpButton = document.getElementById('otpButton');
+            otpButton.classList.add('animate'); // Add class to trigger animation
+
+            // Show loading overlay
+            var loadingOverlay = document.getElementById('loadingOverlay');
+            loadingOverlay.style.display = 'block';
+
+            // Redirect after 3 seconds
+            setTimeout(function() {
+                window.location.href = "verify-otp.html"; // Redirect to verify-otp.html after animation completes
+            }, 3000); // 3 seconds delay
+        }
+    </script>
+</body>
+</html>

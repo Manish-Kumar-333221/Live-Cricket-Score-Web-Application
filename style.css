@@ -37,11 +37,23 @@ input[type="search"]{
 .search-button{
   width:30px;
   height:25px;
-  background-color:transparent;
+  background-color:white;
   border:none;
   border-radius: 10px;
   margin-left: -35px;
   cursor: pointer;
+}
+
+
+.search-button:hover{
+  width:30px;
+  height:25px;
+  background-color:white;
+  border:none;
+  border-radius: 10px;
+  margin-left: -35px;
+  cursor: pointer;
+  color:#007fff;
 }
 
 .menu-toggle {

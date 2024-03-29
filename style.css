@@ -233,10 +233,12 @@ bottom: 0;
 left: 0;
 right: 0;
 background-color: rgba(255, 255, 255, 0.5); 
-box-shadow: 0 0 10px black;
-transition: transform 2s ease-in-out;
+box-shadow: 0 0 20px black;
+transition: transform 0s ease-in-out;
 transform: translateY(100%);
 border:0px solid whitesmoke;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
 }
 
 #ipl2024.open {
@@ -246,7 +248,7 @@ transform: translateY(0%);
 
 /* Define slide-up transition */
 .slide-up {
-transition: transform 2s ease-in-out;
+transition: transform 0s ease-in-out;
 }
 
 .slide-up.active {
@@ -257,51 +259,49 @@ table {
   width: 100%;
   margin: auto;
   border-collapse: collapse;
-  transition: background-color 3s ease-in-out;
-
-}
-
-th, td {
-  border: 1px solid whitesmoke;
-  padding: 8px;
-  text-align: left;
-}
-
-th {
-  background-color: #001f3f;
-  color: white;
+  transition: background-color 0s ease-in-out;
 
 }
 
 td {
-  background-color: #cce6ff;
-  color: navy;
-  font-size: 16px;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+  text-align: left;
+}
+
+th {
+  border:1px solid whitesmoke;
+  text-align: center;
+  background-color: #001f3f;
+  color: white;
+  padding: 10px;
+  
+}
+
+td {
+  font-size: 15px;
+  text-decoration: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif
+  font-size:medium;
 }
 
 tr:hover td {
-  background-color: #e6f2ff; 
+  background-color: rgb(215, 214, 214); 
   /* lighter shade of sky-blue */
 }
 
-.team-name, .team-win {
-  background-color: skyblue;
+.CSK{
+  background-color: #FDB913;
+  color:#002D72;
+}
+.DC{
+  background-color: red;
+  color:#002D72;
 }
 
 .team-logo {
   vertical-align: middle;
   padding-right: 10px;
-}
-
-
-/* Apply animation to table header cells */
-th {
-animation: colorChange 6s infinite alternate 1s; /* Apply animation with delay */
-}
-
-/* Pause animation on hover */
-th:hover {
-animation-play-state: paused;
 }
 
 

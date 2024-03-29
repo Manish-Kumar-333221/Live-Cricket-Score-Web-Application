@@ -227,7 +227,7 @@ color:#007fff;
 }
 
 #ipl2024 {
-display: none;
+/* display: none; */
 position: absolute;
 bottom: 0;
 left: 0;

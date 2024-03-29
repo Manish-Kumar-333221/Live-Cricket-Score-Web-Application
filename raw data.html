@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IPL 2024</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    header {
+        background-color: #001f3f; /* navy blue */
+        color: white;
+        padding: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-button {
+        background-color: #001f3f; /* navy blue */
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+    }
+
+    nav {
+        background-color: #f2f2f2; /* light gray */
+        padding: 10px;
+    }
+
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: #333; /* dark gray */
+        transition: border-bottom 0.5s;
+    }
+
+    nav ul li a:hover {
+        border-bottom: 2px solid #001f3f; /* navy blue */
+        transition: border-bottom 0.2s;
+        color:red;
+    }
+
+  #ipl2024 {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 255, 255, 0.5); 
+    box-shadow: 0 0 10px black;
+    transition: transform 2s ease-in-out;
+    transform: translateY(100%);
+    border:0px solid whitesmoke;
+}
+
+#ipl2024.open {
+    display: block;
+    transform: translateY(0%);
+}
+
+/* Define slide-up transition */
+.slide-up {
+    transition: transform 2s ease-in-out;
+}
+
+.slide-up.active {
+    transform: translateY(-100%);
+}
+
+table {
+        width: 100%;
+        margin: auto;
+        border-collapse: collapse;
+        transition: background-color 3s ease-in-out;
+      
+    }
+
+    th, td {
+        border: 1px solid whitesmoke;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #001f3f;
+        color: white;
+     
+    }
+
+    td {
+        background-color: #cce6ff;
+        color: navy;
+        font-size: 16px;
+    }
+
+    tr:hover td {
+        background-color: #e6f2ff; 
+        /* lighter shade of sky-blue */
+    }
+
+    .team-name, .team-win {
+        background-color: skyblue;
+    }
+
+    .team-logo {
+        vertical-align: middle;
+        padding-right: 10px;
+    }
+
+
+/* Apply animation to table header cells */
+th {
+    animation: colorChange 6s infinite alternate 1s; /* Apply animation with delay */
+}
+
+/* Pause animation on hover */
+th:hover {
+    animation-play-state: paused;
+}
+
+ 
+   
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>IPL 2024</h1>
+    <button class="menu-button">Menu</button>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="#">Live</a></li>
+        <li><a href="#">IPL</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#" id="showIPL">Team</a></li>
+        <li><a href="#">Schedules</a></li>
+        <li><a href="#">Players</a></li>
+    </ul>
+</nav>
+
+<div id="ipl2024" class="slide-up">
+    <table>
+        <thead>
+            <tr>
+                <th>Team Name</th>
+                <th>Team Win</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Add table data here -->
+                <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/f/fa/Chennai_Super_Kings_Logo.svg/512px-Chennai_Super_Kings_Logo.svg.png" alt="CSK Logo" width="30" height="30">
+                Chennai Super Kings
+            </td>
+            <td class="team-win">2010, 2011, 2018, 2021, 2023</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/delhi-capitals.png" alt="DC Logo" width="30" height="30">
+                Delhi Capitals
+            </td>
+            <td class="team-win">null</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/gujarat-titans.png" alt="GT Logo" width="30" height="30">
+                Gujarat Titans
+            </td>
+            <td class="team-win">2022</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Kolkata_Knight_Riders_Logo.svg/1200px-Kolkata_Knight_Riders_Logo.svg.png" alt="KKR Logo" width="30" height="30">
+                Kolkata Knight Riders
+            </td>
+            <td class="team-win">2012, 2014</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/lucknow-super-giants.png" alt="LSG Logo" width="30" height="30">
+                Lucknow Super Giants
+            </td>
+            <td class="team-win">null</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/mumbai-indians.png" alt="MI Logo" width="30" height="30">
+                Mumbai Indians
+            </td>
+            <td class="team-win">2013, 2015, 2017, 2019, 2020</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/punjab-kings.png" alt="PK Logo" width="30" height="30">
+                Punjab Kings
+            </td>
+            <td class="team-win">null</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/rajasthan-royals.png" alt="RR Logo" width="30" height="30">
+                Rajasthan Royals
+            </td>
+            <td class="team-win">2008</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/royal-challengers-bangalore.png" alt="RCB Logo" width="30" height="30">
+                Royal Challengers Bangalore
+            </td>
+            <td class="team-win">null</td>
+        </tr>
+        <tr>
+            <td class="team-name">
+                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/sunrisers-hyderabad.png" alt="SRH Logo" width="30" height="30">
+                Sunrisers Hyderabad
+            </td>
+            <td class="team-win">2016</td>
+        </tr>
+        
+        </tbody>
+    </table>
+</div>
+
+<script>
+ document.getElementById('showIPL').addEventListener('click', function() {
+    document.getElementById('ipl2024').classList.toggle('open');
+    document.getElementById('ipl2024').classList.toggle('slide-up');
+});
+
+window.addEventListener('click', function(event) {
+    if (!document.getElementById('ipl2024').contains(event.target) && event.target != document.getElementById('showIPL')) {
+        document.getElementById('ipl2024').classList.remove('open');
+        document.getElementById('ipl2024').classList.add('slide-up');
+    }
+});
+
+</script>
+
+</body>
+</html>

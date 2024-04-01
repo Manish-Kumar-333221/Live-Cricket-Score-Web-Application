@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVE CRICKET SCORE || BACKGROUND PLAY</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        .container1{
+        width:95vw;
+        height: 45px;
+        background-color:navy;
+        color:white;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        justify-content:right;
+        position: relative;
+        margin: auto;
+        border:2px solid navy;
+        }
+
+        .top-text-left{
+            margin-top: 12.5px;
+            left:15px;
+            position: absolute;
+        }
+        .top-text-right{
+            position: absolute;
+            text-align:right;
+            right:40px;
+            transform: rotate(90deg);
+            margin-top: 12px;
+            font-size: large;
+            text-decoration: solid;
+            cursor: pointer;
+        }
+        .top-text-right:hover{
+            position: absolute;
+            text-align:right;
+            right:40px;
+            transform: rotate(90deg);
+            margin-top: 12px;
+            font-size: large;
+            text-decoration: solid;
+            cursor: pointer;
+            color:rgb(167, 167, 167);
+        }
+            .cancel{
+            background-color:transparent;
+            color: white;
+            border-radius: 50%;
+            width:30px;
+            height: 30px;
+            border:0px;
+            cursor: pointer;
+            position: absolute;
+            right:10px;
+            margin-top: 6px;
+            font-size: x-large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+            }
+            .cancel:hover{
+            background-color:red;
+            color: white;
+            border-radius: 25%;
+            width:30px;
+            height: 30px;
+            border:0px;
+            cursor: pointer;
+            position: absolute;
+            right:10px;
+            margin-top: 6px;
+            font-size: x-large;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+            
+            .container2{
+                margin-top: -10px;
+                margin: auto;
+                width:95vw;
+                height: 100px;;
+                background-color: whitesmoke;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                border: 2px solid navy;
+            }
+            team01\-img{
+                position: absolute;
+                left:10px;
+
+            }
+
+            .container3{
+            width:95vw;
+            height: 65px;
+            background-color: navy;
+            text-align: center;
+            color:whitesmoke;
+            border-bottom-right-radius: 15px;
+            border-bottom-left-radius: 15px;
+            margin: auto;
+            margin-top: -20px;
+            border:2px solid navy;
+            }
+            .need-run{
+                padding-top: 10px;
+                font-size: small;
+            }
+            .match-no{
+                margin-top: -12.5px;
+                color:rgb(189, 189, 189);
+                font-size: x-small;
+                font-weight: 200;
+            }
+
+            
+    </style>
+</head>
+<body>
+     <div class="container1">
+        <h3 class="top-text-left">LIVE IPL 2024</h3>
+        <h3 class="top-text-right">&#8230;</h3>
+        <button class="cancel"> x </button>  
+     </div>
+     <div class="container2">
+            <img scr="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/SRH/Logos/Logooutline/RCBoutline.png" alt="team-1" width="30" height="30" class="team01-img">
+        <h4 class="team01-score">XX/X</h4>
+        <h5 class="team01-over">(XX)</h5>
+     
+        <div class="vs-logo">
+<!--//need to add text here for animation during six-four/out/highlights -->
+        <h1 id="vs"> V/S </h1>
+     </div>
+        <h4 class="team02-score">XX/X</h4>
+        <h5 class="team02-over">(XX)</h5>
+        <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RCB/Logos/Logooutline/RCBoutline.png" alt="team02" width="30" height="30" class="team02-img">
+     </div>
+     <div class="container3">
+        <h4 class="need-run">TeamX need XX run in xx balls to win the match</h4>
+        <h5 class="match-no">T20 XX/74</h5>
+     </div>
+</body>
+</html>

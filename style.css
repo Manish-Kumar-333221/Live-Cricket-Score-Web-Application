@@ -150,13 +150,17 @@ color:#007fff;
 /* Define animation keyframes */
 @keyframes colorChange {
   0%, 100% {
-      background-color: #333; /* Start and end background color */
+      background-color: rgb(235, 3, 3);
+       /* Start and end background color */
   }
-  50% {
-      background-color: #555; /* Middle background color resembling hover */
+  20% {
+      background-color: #d70303; /* Middle background color resembling hover */
   }
 }
 
+.live-container-text {
+  animation: colorChange 1s infinite alternate 0.25s; /* Apply animation with delay */
+}
 .menu ul li:nth-child(1) a {
   animation: colorChange 6s infinite alternate 0.25s; /* Apply animation with delay */
 }
@@ -264,7 +268,7 @@ table {
 }
 
 td {
-  border: 1px solid whitesmoke;
+  border: 0px solid whitesmoke;
   padding: 5px;
   text-align: left;
 }
@@ -283,24 +287,20 @@ td {
   text-decoration: bold;
   font-family: Verdana, Geneva, Tahoma, sans-serif
   font-size:medium;
+  border:1px solid white;
 }
 
-tr:hover td {
-  background-color: rgb(215, 214, 214); 
+
+tr:hover {
+
+  cursor: pointer;
+  box-shadow: 0 0 10px black;
   /* lighter shade of sky-blue */
 }
 
-.CSK{
-  background-color: #FDB913;
-  color:#002D72;
-}
-.DC{
-  background-color: red;
-  color:#002D72;
-}
 
 .team-logo {
-  width: 65px;
+  width: 50px;
   height: auto;
   vertical-align: middle;
   padding-right: 10px;
@@ -333,17 +333,17 @@ footer {
 
 .RCB {
   background-color: #C8102E;
-  color: #000000;
+  color:goldenrod;
 }
 
 .SH {
   background-color: #E86627;
-  color: #000000;
+  color: white;
 }
 
 .DC {
   background-color: #004C93;
-  color: #FF8200;
+  color:white;
 }
 
 .PK {
@@ -353,7 +353,7 @@ footer {
 
 .RR {
   background-color: #EA0A8E;
-  color: #004BA0;
+  color: gold;
 }
 
 .GT {
@@ -364,4 +364,52 @@ footer {
 .LSG{
   background-color:white;
   color: royalblue;
+  }
+  
+  .live-score-container{
+    width:90vw;
+    height: 50px;
+    background-color: #333;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: auto;
+    position: relative;
+  }
+  .ipl-live-container-text{
+    color:#999;
+    padding: 15px;
+    font-size: large;
+  }
+  .live-container-text{
+    width:50px;
+    height: 25px;
+    background-color: red;
+    color:whitesmoke;
+    border:0px solid;
+    border-radius: 5px;
+    position: absolute;
+    right:15px;
+    bottom: 12.5px;
+
+  }
+  .live-score-container1{
+    width:90vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border:1px solid #333;
+    margin: auto;
+    padding: -50px;
+  }
+  .live-score-container2{
+   padding-top: 10px;
+   text-align:center;
+   width:90vw;
+   height:50px;
+   background-color: #333;
+   color:whitesmoke;
+   margin:auto;
+   border-bottom-left-radius: 15px;
+   border-bottom-right-radius: 15px;
   }

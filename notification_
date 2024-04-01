@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>notification alert messeges</title>
+    <style>
+        .container{
+            background-color: #333;
+            color:whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            width:95vw;
+            height: 15vh;
+            flex-wrap: wrap;
+            position:absolute;
+            margin: auto;
+            border-radius: 15px;
+        }
+        img{
+            background-color: navy;
+            width:20;
+            height: 20;
+            position: absolute;
+            left:15px;
+            top:10px;
+            border-radius: 10px;
+        }
+
+        h6{
+            position: absolute;
+            top:-10px;
+            left:42.5px;
+            color:rgb(200, 200, 200);
+        }
+
+        h4{
+           position: absolute;
+           top:20px;
+           left:45px;
+        }
+
+        h5{
+            position: absolute;
+            top:45px;
+            left: 45px;
+            color:rgb(200, 200, 200);
+            font: 200;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" width="20px" height="20px">
+        <h6>IPL 2024 PREMIUM - 11 min ago</h6>
+        <h4>Bangalore VS Rajasthan(today)</h4>
+        <h5>don't miss out to watch live at 8:00pm tonight</h5>
+    </div>
+</body>
+</html>

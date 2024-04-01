@@ -227,7 +227,7 @@ color:#007fff;
 }
 
 #ipl2024 {
-display: none;
+/* display: none; */
 position: absolute;
 bottom: 0;
 left: 0;
@@ -300,6 +300,8 @@ tr:hover td {
 }
 
 .team-logo {
+  width: 65px;
+  height: auto;
   vertical-align: middle;
   padding-right: 10px;
 }
@@ -312,3 +314,54 @@ footer {
   padding: 50px;
   width:100vw;
 }
+
+
+.CSK {
+  background-color: #FDB913;
+  color: #002D72;
+}
+
+.MI {
+  background-color: #004BA0;
+  color: #D6AA00;
+}
+
+.KKR {
+  background-color: #2E0854;
+  color: #FFC627;
+}
+
+.RCB {
+  background-color: #C8102E;
+  color: #000000;
+}
+
+.SH {
+  background-color: #E86627;
+  color: #000000;
+}
+
+.DC {
+  background-color: #004C93;
+  color: #FF8200;
+}
+
+.PK {
+  background-color: #DC1D3B;
+  color: #B1A7AF;
+}
+
+.RR {
+  background-color: #EA0A8E;
+  color: #004BA0;
+}
+
+.GT {
+  background-color: #82012C;
+  color: #FFD100;
+}
+
+.LSG{
+  background-color:white;
+  color: royalblue;
+  }

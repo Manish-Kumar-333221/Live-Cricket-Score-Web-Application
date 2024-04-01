@@ -14,7 +14,7 @@
 
         <div class="input-search-box">
             <input type="search" class="search-input" placeholder="Search">
-            <button class="search-button" onclick="#">
+            <button class="search-button" onclick="">
                 <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20px" height="22px" viewBox="0 0 50 50" class="search">
                 <path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"></path>
                 </svg></button>
@@ -39,11 +39,11 @@
 <nav class="nav2">
     <ul>
         <li><a href="#">Live</a></li>
-        <li><a href="#">IPL</a></li>
+        <li><a href="#">Matches</a></li>
+        <li><a href="#">Table</a></li>
         <li><a href="#">News</a></li>
-        <li><a href="#" id="showIPL">Team</a></li>
-        <li><a href="#">Schedules</a></li>
-        <li><a href="#">Players</a></li>
+        <li><a href="#" id="showIPL">Teams</a></li>
+        <li><a href="#" id="player">Players</a></li>
     </ul>
 </nav>
 
@@ -57,75 +57,92 @@
         </thead>
         <tbody>
             <!-- Add table data here -->
-                <tr class="CSK">
-            <td class="team-name">
-                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/CSK/logos/Logooutline/CSKoutline.png" alt="CSK Logo" width="45" height="35">
+                <tr>
+            <td class="team-name CSK">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/CSK/logos/Logooutline/CSKoutline.png" alt="CSK Logo" width="30" height="30">
                 Chennai Super Kings
             </td>
-            <td class="team-win">2010, 2011, 2018, 2021, 2023</td>
+            <td class="team-win CSK">2010, 2011, 2018, 2021, 2023</td>
         </tr>
-        <tr class="DC">
-            <td class="team-name">
-                <img class="team-logo" src="" alt="DC Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name DC">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/DC/Logos/LogoOutline/DCoutline.png" alt="DC Logo" width="30" height="30">
                 Delhi Capitals
             </td>
-            <td class="team-win">null</td>
+            <td class="team-win DC">null</td>
         </tr>
-        <tr class="GT">
-            <td class="team-name">
-                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/gujarat-titans.png" alt="GT Logo" width="30" height="30">
+       
+        <tr>
+            <td class="team-name GT ">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/GT/Logos/Logooutline/GToutline.png" alt="GT Logo" width="30" height="30">
+
                 Gujarat Titans
             </td>
-            <td class="team-win">2022</td>
+            <td class="team-win GT">2022</td>
         </tr>
-        <tr class="KKR">
-            <td class="team-name">
-                <img class="team-logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/b/b8/Kolkata_Knight_Riders_Logo.svg/1200px-Kolkata_Knight_Riders_Logo.svg.png" alt="KKR Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name KKR">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/KKR/Logos/Logooutline/KKRoutline.png" alt="KKR Logo" width="30" height="30">
+
                 Kolkata Knight Riders
             </td>
-            <td class="team-win">2012, 2014</td>
+            <td class="team-win KKR">2012, 2014</td>
         </tr>
-        <tr class="LSG">
-            <td class="team-name">
-                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/lucknow-super-giants.png" alt="LSG Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name LSG">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/LSG/Logos/Logooutline/LSGoutline.png" alt="LSG Logo" width="30" height="30">
+
                 Lucknow Super Giants
             </td>
-            <td class="team-win">null</td>
+            <td class="team-win LSG">null</td>
         </tr>
-        <tr class="MI">
-            <td class="team-name">
-                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/mumbai-indians.png" alt="MI Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name MI">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/MI/Logos/Logooutline/MIoutline.png" alt="MI Logo" width="30" height="30">
+
                 Mumbai Indians
             </td>
-            <td class="team-win">2013, 2015, 2017, 2019, 2020</td>
+            <td class="team-win MI">2013, 2015, 2017, 2019, 2020</td>
         </tr>
-        <tr class="PK">
-            <td class="team-name">
-                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/punjab-kings.png" alt="PK Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name PK">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/PBKS/Logos/Logooutline/PBKSoutline.png" alt="PK Logo" width="30" height="30">
+
                 Punjab Kings
             </td>
-            <td class="team-win">null</td>
+            <td class="team-win PK">null</td>
         </tr>
-        <tr class="RR">
-            <td class="team-name">
-                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/rajasthan-royals.png" alt="RR Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name RR">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RR/Logos/Logooutline/RRoutline.png" alt="RR Logo" width="30" height="30">
+
                 Rajasthan Royals
             </td>
-            <td class="team-win">2008</td>
+            <td class="team-win RR">2008</td>
         </tr>
-        <tr class="RCB">
-            <td class="team-name">
-                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/royal-challengers-bangalore.png" alt="RCB Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name RCB">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RCB/Logos/Logooutline/RCBoutline.png" alt="RCB Logo" width="30" height="30">
+
                 Royal Challengers Bangalore
             </td>
-            <td class="team-win">null</td>
+            <td class="team-win RCB">null</td>
         </tr>
-        <tr class="SH">
-            <td class="team-name">
-                <img class="team-logo" src="https://www.iplt20.com/images/ipl/teams/sunrisers-hyderabad.png" alt="SRH Logo" width="30" height="30">
+
+        <tr>
+            <td class="team-name SH">
+                <img class="team-logo" src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/SRH/Logos/Logooutline/SRHoutline.png" alt="SRH Logo" width="30" height="30">
+
                 Sunrisers Hyderabad
             </td>
-            <td class="team-win">2016</td>
+            <td class="team-win SH">2016</td>
         </tr>
         
         </tbody>
@@ -133,7 +150,29 @@
 </div>
 
     <main>
+        <div class="live-score-container">
+            <p style="text-align:left;" class="ipl-live-container-text">IPL</p>
+            <button class="live-container-text">LIVE</button> 
+        </div>
+        <div class="live-score-container1">
+           <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/CSK/logos/Logooutline/CSKoutline.png" alt="Team 1" height="50px" width="50px">
+            <h3 class="Score-team1">xx/x</h3>
+            <h5 class="over-team1">(xx)</h5>
+            <h3 class="Score-team2">xx/x</h3>
+            <h5 class="over-team2">(xx)</h5>
+            <img src="https://bcciplayerimages.s3.ap-south-1.amazonaws.com/ipl/RCB/Logos/Logooutline/RCBoutline.png" alt="Team 2" width="50px" height="50px">
+        </div>
+        
+        <div class="live-score-container2">
+            <h5 class="win-chance-run">team X needs XX run in xx balls to win the match</h5>
+            <h6 class="match-number-text">T20 XX OF 74</h6>
+        </div>
+
+
         <section id="live-scores" class="section">
+
+
+
             <h2>Live Scores</h2>
             <p>This section will display live scores.</p>
         </section>

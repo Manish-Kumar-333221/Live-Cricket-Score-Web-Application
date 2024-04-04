@@ -1,11 +1,91 @@
-<body>
+<!DOCTYPE html>
+<html lang="en">
 
-    <form>
-        <input type="text" name="student name" placeholder="enter your name">
-        <br>
-        <br>
-        <input type="password" name="password" placeholder="enter your password">
-        <br><br>
-        <button> LOGIN ACCOUNT </button>
-    </form>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    .menu {
+      position: fixed;
+      top: 0;
+      right: 0;
+      z-index: 999;
+    }
+
+    .menu-button {
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+
+    .menu-list {
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100vh;
+      width: 50%;
+      background-color: #fff;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in-out;
+      z-index: 998;
+    }
+
+    .menu-list.open {
+      transform: translateX(0);
+    }
+
+    .menu-item {
+      width: 100%;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      color: #000;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .menu-item:hover {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="menu">
+    <div class="menu-button" onclick="toggleMenu()">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </div>
+    <div class="menu-list" id="menuList">
+      <div class="menu-item">Account</div>
+      <div class="menu-item">Notifications</div>
+      <div class="menu-item">Subscription</div>
+      <div class="menu-item">Delete & Deactivate Account</div>
+      <div class="menu-item">Settings</div>
+      <div class="menu-item">Log-Out</div>
+    </div>
+  </div>
+
+  <script>
+    function toggleMenu() {
+      const menuList = document.getElementById('menuList');
+      menuList.classList.toggle('open');
+      menuList.classList.toggle('close');
+      
+    }
+  </script>
+
+
+
 </body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LIVE SCORE IPL 2024 | HOME PAGE INDEX</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=San%20Francisco%20Pro&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+     <header>
+        <div class="logo-box">
+            <img src="https://www.iplt20.com/assets/images/ipl-logo-new-old.png" alt="IPL 2024" class="logo">
+        </div>
+       
+        <div class="menu-container">
+            <button id="menu-button">        
+                 <img src="./toppng.com-menu-icon-png-3-lines-2000x2000.png" alt="MENU" class="menu">
+            </button>
+            <ul id="menu-list">
+                <li><a href="#My Account">My Account</a></li>
+                <li><a href="#notification">Notification</a></li>
+                <li><a href="#Subscription">Subscription</a></li>
+                <li><a href="#help&support">Help & Support</a></li>
+                <li><a href="Setting">Setting</a></li>
+                <li><a>Dark Mode <label class="switch">
+                    <input type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+              </a></li>
+            </ul>
+        </div>
+     </header>
+     <ul class="navbar">
+        <li><a href="#">Live</a></li>
+        <li><a href="#">Matches</a></li>
+        <li><a href="#">Table</a></li>
+        <li><a href="#">Teams</a></li>
+        <li><a href="#">Players</a></li>
+    </ul>
+
+     <script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('menu-list').classList.toggle('active');
+});
+
+document.addEventListener('click', function(event) {
+    if (!event.target.closest('.menu-container')) {
+        document.getElementById('menu-list').classList.remove('active');
+    }
+});
+
+     </script>
+</body>
+</html>

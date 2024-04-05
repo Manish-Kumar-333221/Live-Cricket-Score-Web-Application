@@ -40,6 +40,35 @@
         <li><a href="#">Players</a></li>
     </ul>
 
+
+
+    <div class="container">
+        <div class="box" onclick="changeColor(1)">
+        <img src="./icons8-home-50.png" alt="Home" width="30px" height="30px">
+        <a class="box-title">Home</a>
+    </div>
+        <div class="box" onclick="changeColor(2)">
+        <img src="./icons8-analysis-50.png" alt="Analysis" width="30px" height="30px">
+        <a class="box-title">Stats</a>
+    </div>
+
+        <div class="box" onclick="changeColor(3)">
+        <img src="./icons8-search-50.png" alt="Search" Width="30px" height="30px"> 
+        <a class="box-title">Search</a>
+    </div>
+
+        <div class="box" onclick="changeColor(4)">
+        <img src="./icons8-newspaper-64.png" alt="News" width="30px"  height="30px">
+        <a class="box-title">News</a>
+    </div>
+
+        <div class="box" onclick="changeColor(5)">
+        <img src="./icons8-account-50.png" alt="Account" width="30px" height="30px"/>
+        <a class="box-title">Account</a>
+    </div>
+      </div>
+
+
      <script>
     document.getElementById('menu-button').addEventListener('click', function() {
     document.getElementById('menu-list').classList.toggle('active');
@@ -48,6 +77,17 @@
 document.addEventListener('click', function(event) {
     if (!event.target.closest('.menu-container')) {
         document.getElementById('menu-list').classList.remove('active');
+    }
+});
+
+
+darkModeSwitch.addEventListener('change', () => {
+    if (darkModeSwitch.checked) {
+        document.body.style.backgroundColor = '#333';
+        document.body.style.color = '#fff';
+    } else {
+        document.body.style.backgroundColor = '#fff';
+        document.body.style.color = '#333';
     }
 });
 
